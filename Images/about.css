@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+:root {
+    --primary-color: #E9BD8C; 
+    --secondary-color: #933C24; 
+    --background-color: #F5F5F5; 
+    --text-color: #333333; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+}
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 2; 
+} 
+.logo img {
+    max-width: 100px;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+.nav-menu li {
+    margin-left: 20px;
+}
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: var(--primary-color);
+}
+.hero {
+    position: relative;
+    height: 70vh;
+    margin-top: -170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    overflow: hidden; 
+    position: relative;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/Hero Bg.png') no-repeat center center/cover;
+    filter: blur(3px);
+    z-index: -1;
+    padding-top: 40px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; 
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 18px;
+    display: flex;
+    color: var(--primary-color);
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 60px;
+    font-family: "Sansita Swashed", system-ui;
+    font-weight: bold;
+    margin: 20px 0;
+    color: var(--background-color);
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.primary-btn {
+    background-color: #b94e3b;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    max-width: 60px;
+}
+.primary-btn:hover{
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+.secondary-btn{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-left: 40px;
+}
+.secondary-btn:hover{
+    color: var(--secondary-color);
+}
+
+/* About Us Section */
+.about-section {
+    max-width: 90%; 
+    margin:  80px auto;
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+.about-section h2 {
+    font-family: 'Sansita Swashed', cursive; 
+    font-size: 44px; 
+    color: var(--text-color); 
+    margin-top: 20px; 
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    color: var(--text-color); 
+    margin: 10px 0; 
+    font-family: 'Inter' sans-serif;
+}
+
+li {
+    margin-left: 30px;
+}
+.about-section ul li {
+  font-family: 'Inter' sans-serif;
+}
+
+/* Cta Section 2 */
+
+.cta-section-2 {
+  background-image: url('Images/Ctr\ Section\ 2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-bottom: 120px;
+}
+.cta-section-2 .cta-content-2{
+  margin-top: 80px;
+}
+.cta-section-2 .cta-content-2 h2{
+  color: white;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 50px;
+}
+.cta-section-2 .cta-content-2 p{
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'inter',sans-serif;
+  color: #e2e2e2;
+}
+.section-btn{
+  padding: 10px 40px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: whitesmoke;
+}
+
+  
+/* Footer Section */
+.footer {
+    background-image: url('Images/Footer\ Background.png');
+    background-size: cover;
+    padding: 40px 0;
+    color: white;
+    height: 500px;
+  }
+  .ff {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0px;
+    align-items: start;
+    text-align: left;
+    margin-top: 70px;
+  }
+  
+  .footer-logo img {
+    width: 120px;
+    margin-left: 150px;
+  }
+  
+  .footer-about, .footer-explore, .footer-news {
+    max-width: 220px;
+  }
+  
+  .footer h3 {
+    color: var(--primary-color); 
+    margin-bottom: 15px;
+  }
+  
+  .footer p, .footer a {
+   
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .footer-explore h3,p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; 
+  }
+  .footer-explore ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-explore ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-explore ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-explore ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .footer-news .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-news .news-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .footer-news .news-content p {
+    margin: 0;
+  }
+  .footer-social{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 130px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: var(--primary-color);
+   
+  }
+  .footer-social h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-social a {
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 30px;
+  }
+  
+  .footer-social a:hover {
+    color: white;
+    font-size: 38px;
+  
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(115, 115, 115, 0.7);
+    font-size: 14px;
+  }
+  .footer-line {
+    border: none; 
+    height: 2px;  
+    background-color: rgba(234, 181, 133, 0.3); 
+    margin: 20px auto ;
+    width: 80%;  
+  }
